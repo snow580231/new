@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>music</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1"/>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<audio id="audio" src="">你的浏览器不支持audio</audio>
+	<div class="index">
+		<div class="head"></div>
+		<div class="main">
+			<div class="content">
+				<ul id="song-list" class="song-list"></ul>
+			</div>
+					
+			<div id="layerSong" class="layer-song">
+				<div id="singerAcatar" class="singer-avatar"></div>
+				<div id="close" class="close">
+					<i class="a"></i>
+					<i class="b"></i>
+				</div>	
+			</div>
+		</div>
+		<div class="foot">
+			<div id="avatar" class="avatar"></div>
+			<div class="foor-top">
+				<div class="fl progress">
+					<div class="not-active-progress"></div>
+					<div id="activeProgress" class="active-progress"></div>
+					<div id="progressMask" class="mask"></div>
+					<div id="progressLayer" class="layer"></div>
+				</div>
+				<div id="mode" class="fl mode">
+					<i class="fa fa-random"></i>
+				</div>
+			</div>
+			<div class="foot-bottom clearfix">
+				<div class="fl clearfix operation">
+					<div class="fl prev toggle" data-num="-1">
+						<i class="fa fa-backward"></i>
+					</div>
+					<div id="play" class="fl play" data-isplay="false">
+						<i class="fa fa-play-circle-o"></i>
+					</div>
+					<div class="fr next toggle">
+						<i class="fa fa-forward"></i>
+					</div>
+				</div>
+				<div class="fl volume">
+					<div class="volume-progress fl">
+						<div class="not-active-volume-progress"></div>
+						<div id="activeVolumeProgress" class="active-volume-progress"></div>
+						<div id="volumeMask" class="volume-mask"></div>
+						<div id="volumeLayer" class="layer"></div>
+					</div>
+					<div class="volume-icon fl"><i class="fa fa-volume-up"></i></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/rem.js"></script>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

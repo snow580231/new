@@ -1,0 +1,20 @@
+body{
+	margin: 0 auto;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clearfix{
+	overflow: hidden;
+}
+.auto-img{
+	width: 100%;
+	display: block;
+}
